@@ -1,0 +1,6 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+libAKSoundEngine.a filter=lfs diff=lfs merge=lfs -text
+WwiseUnityIntergration_iOS_Src.zip filter=lfs diff=lfs merge=lfs -text
+libAkMusicEngine.a filter=lfs diff=lfs merge=lfs -text
+WwiseUnityIntegration_iOS_Src.zip filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="6" Flags="861300542">
+	<Platform GUID="{10133C4D-E0F8-4106-A33C-FC579B2A6BBD}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="2279659568" Timestamp="1593010598"/>
+				<File Name="Main" Hash="757536480" Timestamp="1593010598"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="2486228195" Timestamp="1593010598"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{DC74204F-9B5B-42ED-AA84-56C8181B6FD9}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="2367758396" Timestamp="1593010598"/>
+				<File Name="Main" Hash="757536480" Timestamp="1593010598"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="345787853" Timestamp="1593010598"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{58EBCE94-57BE-433A-BE2A-02DD2A6263B1}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="1182415902" Timestamp="1593010598"/>
+				<File Name="Main" Hash="757536480" Timestamp="1593010598"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="2604837897" Timestamp="1593010598"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{10722A22-F1B1-4E07-AE5B-2E67A5DBA247}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Init" Hash="3629367326" Timestamp="1593010598"/>
+				<File Name="Main" Hash="757536480" Timestamp="1593010598"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="2033514807" Timestamp="1593010598"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+</IncrementalBankBuild>
