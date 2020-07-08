@@ -23,6 +23,7 @@ public class CardZoom : MonoBehaviour
 
         RectTransform rect = zoomCard.GetComponent<RectTransform>();
         rect.sizeDelta = new Vector2(200, 260);
+
     }
 
     public void OnHoverExit()

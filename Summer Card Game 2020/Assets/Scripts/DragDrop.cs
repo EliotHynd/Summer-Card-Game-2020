@@ -1,22 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour
 {
     private bool isDragging = false;
     private bool isOverDropZone = false;
+    private bool manaUsable;
+
 
     private GameObject dropZone;
     private GameObject canvas;
     private GameObject startParent;
+    public GameObject player;
 
     private Vector2 startPosition;
 
     private void Awake()
     {
         canvas = GameObject.Find("Main Canvas");
+        player = GameObject.Find("HMStats");
+
     }
+
     void Update()
     {
         if (isDragging)
@@ -24,6 +31,7 @@ public class DragDrop : MonoBehaviour
             transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             transform.SetParent(canvas.transform, true);
         }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -48,7 +56,7 @@ public class DragDrop : MonoBehaviour
     public void EndDrag()
     {
         isDragging = false;
-        if (isOverDropZone)
+        if (isOverDropZone && player.GetComponent<PlayerHealthScript>().manaUsable == true)
         {
             transform.SetParent(dropZone.transform, false);
         } else

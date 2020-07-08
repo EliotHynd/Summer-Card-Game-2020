@@ -269,6 +269,59 @@ MonoBehaviour:
   playerZone: {fileID: 1065897084}
   deck: {fileID: 1648913210}
   hand: {fileID: 407017179}
+--- !u!1 &284860642
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 284860643}
+  - component: {fileID: 284860644}
+  m_Layer: 5
+  m_Name: HMStats
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &284860643
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284860642}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 526439883}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -272, y: 249.5}
+  m_SizeDelta: {x: 100, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &284860644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284860642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab135e4835e79fa4b9dabe21d5864b97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 40
+  mana: 10
+  healthText: {fileID: 431143974}
+  manaText: {fileID: 1949521295}
+  manaUsable: 0
 --- !u!1 &407017179
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +602,6 @@ GameObject:
   - component: {fileID: 526439882}
   - component: {fileID: 526439881}
   - component: {fileID: 526439880}
-  - component: {fileID: 526439879}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -557,22 +609,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &526439879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 526439878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab135e4835e79fa4b9dabe21d5864b97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 40
-  mana: 10
-  healthText: {fileID: 431143974}
-  manaText: {fileID: 1949521295}
 --- !u!114 &526439880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,6 +682,7 @@ RectTransform:
   m_Children:
   - {fileID: 431143976}
   - {fileID: 1949521297}
+  - {fileID: 284860643}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1111,7 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70dee493fc251b14a8e0b02988a29a37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card1: {fileID: 4855679401281435776, guid: af45b692cfc11cf41a12cb66fc3ba299, type: 3}
+  card1: {fileID: 5439083983745272075, guid: 11202da4bc1dd8640a4e1a3eda4dd2de, type: 3}
   card2: {fileID: 2676611065494762402, guid: 1c5ac15040ef29e4a87c57f60a349762, type: 3}
   card3: {fileID: 4126365368527276121, guid: e9ecbfaa8787ad342bfcb055422b4782, type: 3}
   card4: {fileID: 1979796587436907442, guid: 4aabb85170c240448932b44be1b0c4fe, type: 3}

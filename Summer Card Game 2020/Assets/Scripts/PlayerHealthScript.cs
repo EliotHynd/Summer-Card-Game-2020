@@ -13,6 +13,8 @@ public class PlayerHealthScript : MonoBehaviour
 
     public Text manaText;
 
+    public bool manaUsable = true;
+
     private void Start()
     {
 
