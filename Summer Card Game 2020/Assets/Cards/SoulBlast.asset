@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de10eebff9390344e96be3a76f1bf8a4, type: 3}
-  m_Name: SuperSoaker
+  m_Name: SoulBlast
   m_EditorClassIdentifier: 
-  cardName: Super Soaker
-  description: Does 3 damage.
-  artwork: {fileID: 0}
+  cardName: Soul Blast
+  description: Deal 5 damage + lose 2 HP
+  artwork: {fileID: 21300000, guid: b80f0a74726b7934797609a817ffdaf2, type: 3}
   manaCost: 1
-  attackVal: 3
+  attackVal: 5
+  protectVal: 0
+  debuffVal: 0
+  healthVal: -2

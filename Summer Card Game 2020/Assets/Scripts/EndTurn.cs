@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class EndTurn : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject player;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        player = GameObject.Find("PlayerStats");
+    }
+    public void EndingTurn()
+    {
+        player.GetComponent<PlayerHealthScript>().currentMana = player.GetComponent<PlayerHealthScript>().mana;
+        player.GetComponent<PlayerHealthScript>().manaText.text = "Player Mana: " + player.GetComponent<PlayerHealthScript>().currentMana;
     }
 }

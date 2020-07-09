@@ -13,6 +13,9 @@ public class Card : ScriptableObject
     //Ints
     public int manaCost;
     public int attackVal;
+    public int protectVal;
+    public int debuffVal;
+    public int healthVal;
 
     public void Print ()
     {

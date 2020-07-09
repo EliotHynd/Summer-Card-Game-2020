@@ -6,7 +6,7 @@ using System.Linq;
 
 public class Deck : MonoBehaviour
 {
-    public GameObject card1, card2, card3, card4, card5, card6, card7, card8, card9, card10;
+    public GameObject card1, card2, card3, card4, card5, card6, card7, card8;
 
     public Text cardcount;
 
@@ -25,15 +25,17 @@ public class Deck : MonoBehaviour
         cards.Add(card6);
         cards.Add(card7);
         cards.Add(card8);
-        cards.Add(card9);
-        cards.Add(card10);
+
+        decknum = cards.Count;
 
         Shuffle(cards);
         
+        /*
         foreach (GameObject card in cards)
         {
             print(card);
         }
+        */
 
     }
 
@@ -46,7 +48,7 @@ public class Deck : MonoBehaviour
         cardcount.text = num.ToString();
     }
 
-    void Shuffle<T>(List<T> list)
+    public void Shuffle<T>(List<T> list)
     {
         System.Random random = new System.Random();
         int n = list.Count;
