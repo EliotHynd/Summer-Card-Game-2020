@@ -74,6 +74,7 @@ public class DragDrop : MonoBehaviour
         if (isOverDropZone && manaUsable == true)
         {
             transform.SetParent(dropZone.transform, false);
+            gameObject.GetComponent<CardFunction>().CardFunctionality();
             gy.GetComponent<GY>().gycards.Add(hand.GetComponent<Hand>().handcards.Where(obj => obj.name == gameObject.name).SingleOrDefault());
             hand.GetComponent<Hand>().handcards.Remove(hand.GetComponent<Hand>().handcards.Where(obj => obj.name == gameObject.name).SingleOrDefault());
 

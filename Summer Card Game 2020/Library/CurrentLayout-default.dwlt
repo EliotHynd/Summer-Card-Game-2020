@@ -262,8 +262,8 @@ MonoBehaviour:
     y: 595
     width: 1367
     height: 352
-  m_MinSize: {x: 102, y: 122}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
@@ -406,9 +406,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9c3affff
-      m_LastClickedID: -50532
-      m_ExpandedIDs: 9c3affffe0c1ffffd4c4ffff7afbffff9c380000ae380000c4380000f2380000fc380000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: ae79ffff827cffff1083ffffea83ffff1484ffffd0dfffff68e8ffff68eeffffa0efffff7afbffff283900009840000044410000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -468,9 +468,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 487.6243, y: 298.7753, z: -3371.1992}
+    m_Target: {x: 481.15494, y: 300.2775, z: -3433.0295}
     speed: 2
-    m_Value: {x: 487.6243, y: 298.7753, z: -3371.1992}
+    m_Value: {x: 481.15494, y: 300.2775, z: -3433.0295}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -503,9 +503,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 611.3614
+    m_Target: 599.09357
     speed: 2
-    m_Value: 611.3614
+    m_Value: 599.09357
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -596,11 +596,11 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\danie\Documents\Unity Projects\Git\Summer-Card-Game-2020\Summer
     Card Game 2020
@@ -608,9 +608,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a360000
-    m_LastClickedID: 13882
-    m_ExpandedIDs: 00000000aa330000523600007236000000ca9a3b
+    m_SelectedIDs: d4340000
+    m_LastClickedID: 13524
+    m_ExpandedIDs: 00000000b83300009036000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -638,7 +638,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa330000
+    m_ExpandedIDs: 00000000b8330000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -663,8 +663,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c22a0000
-    m_LastClickedInstanceID: 10946
+    m_SelectedInstanceIDs: ac79ffff
+    m_LastClickedInstanceID: -34388
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300006c070100
     m_RenameOverlay:

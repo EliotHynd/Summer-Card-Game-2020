@@ -13,6 +13,8 @@ public class PlayerHealthScript : MonoBehaviour
     public Text healthText;
     public Text manaText;
 
+    public GameObject sceneManager;
+
     private void Start()
     {
         currentHealth = health;
@@ -21,5 +23,20 @@ public class PlayerHealthScript : MonoBehaviour
         healthText.text = "Player Health: " + currentHealth;
         manaText.text = "Player Mana: " + currentMana;
 
+        sceneManager = GameObject.Find("LevelManager");
+
+    }
+
+    private void Update()
+    {
+        PlayerDeath();
+    }
+
+    void PlayerDeath()
+    {
+        if (currentHealth <= 0)
+        {
+            sceneManager.GetComponent<LevelManager>().LoadSpecificLevel();
+        }
     }
 }

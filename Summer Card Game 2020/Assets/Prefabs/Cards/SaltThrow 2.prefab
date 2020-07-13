@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 6651381802782407390}
   - component: {fileID: 7502387204384737959}
   - component: {fileID: 8075942180656782620}
+  - component: {fileID: 47563784532299501}
   m_Layer: 8
   m_Name: SaltThrow 2
   m_TagString: Untagged
@@ -213,6 +214,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  deck: {fileID: 0}
+  hand: {fileID: 0}
+  gy: {fileID: 0}
 --- !u!114 &2871055048666937021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +424,19 @@ MonoBehaviour:
   nameText: {fileID: 5845023126083025556}
   descripText: {fileID: 3393654927616011411}
   artworkImage: {fileID: 4795598809272487860}
+--- !u!114 &47563784532299501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3291626690504998506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6089511bfb273b0408eb9ffabf4dd6bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
 --- !u!1 &7604981738096539053
 GameObject:
   m_ObjectHideFlags: 0

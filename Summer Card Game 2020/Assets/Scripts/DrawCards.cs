@@ -9,7 +9,9 @@ public class DrawCards : MonoBehaviour
     public GameObject playerZone;
     public GameObject deck;
     public GameObject hand;
+
     int cardhand;
+    
     GridLayoutGroup pzgroup;
 
 
@@ -17,7 +19,7 @@ public class DrawCards : MonoBehaviour
 
     void Start()
     {
-
+        StartCoroutine(LateStart(1));
 
     }
 
@@ -34,8 +36,9 @@ public class DrawCards : MonoBehaviour
 
     public void Draw()
     {
-
-        for (var i = 0; i < 5; i++)
+        int drawamount = 5 - hand.GetComponent<Hand>().handcards.Count;
+        Debug.Log("Cards Can Draw: " + drawamount);
+        for (var i = 0; i < drawamount; i++)
         {
 
             GameObject playercard = Instantiate(deck.GetComponent<Deck>().cards.Last<GameObject>(), new Vector3(0, 0, 0), Quaternion.identity);
@@ -52,6 +55,12 @@ public class DrawCards : MonoBehaviour
         } 
 
 
+    }
+
+    IEnumerator LateStart(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        Draw();
     }
 
 }

@@ -25,18 +25,18 @@ public class GY : MonoBehaviour
         gyamount = gycards.Count;
         gyText.text = gyamount.ToString();
 
-        if (gyamount >= deckamount)
+    }
+
+    public void GYToDeck()
+    {
+        int temp = gycards.Count;
+        for (var i = 0; i < temp; i++)
         {
-            int temp = gycards.Count;
-            for (var i = 0; i < temp; i++)
-            {
-                deck.GetComponent<Deck>().cards.Add(gycards.Last<GameObject>());
+            deck.GetComponent<Deck>().cards.Add(gycards.Last<GameObject>());
 
-                gycards.RemoveAt(gycards.Count - 1);
-            }
-            gycards.Clear();
-            deck.GetComponent<Deck>().Shuffle(deck.GetComponent<Deck>().cards);
+            gycards.RemoveAt(gycards.Count - 1);
         }
-
+        gycards.Clear();
+        deck.GetComponent<Deck>().Shuffle(deck.GetComponent<Deck>().cards);
     }
 }
