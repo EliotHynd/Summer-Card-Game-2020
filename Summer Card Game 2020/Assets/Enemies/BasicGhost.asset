@@ -16,3 +16,7 @@ MonoBehaviour:
   enemyHealth: 20
   enemyMinDamage: 2
   enemyMaxDamage: 5
+  enemyDebuff: 1
+  enemyShield: 5
+  attack2: 0
+  attack3: 0

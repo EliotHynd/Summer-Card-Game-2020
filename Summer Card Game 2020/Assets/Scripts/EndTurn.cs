@@ -21,6 +21,9 @@ public class EndTurn : MonoBehaviour
     }
     public void EndingTurn()
     {
+        enemy.GetComponent<EnemyFunction>().shield = 0;
+        enemy.GetComponent<EnemyFunction>().enemyShield.text = "Def: " + enemy.GetComponent<EnemyFunction>().shield;
+
         enemy.GetComponent<EnemyFunction>().EnemyTurn();
 
         player.GetComponent<PlayerHealthScript>().currentMana = player.GetComponent<PlayerHealthScript>().mana;
@@ -29,5 +32,10 @@ public class EndTurn : MonoBehaviour
         gy.GetComponent<GY>().GYToDeck();
 
         drawCards.GetComponent<DrawCards>().Draw();
+
+        enemy.GetComponent<EnemyFunction>().debuffVal = 0;
+        enemy.GetComponent<EnemyFunction>().enemyDebuff.text = "";
+
+        player.GetComponent<PlayerHealthScript>().debuffVal = 0;
     }
 }

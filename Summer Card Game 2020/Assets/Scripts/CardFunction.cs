@@ -27,8 +27,19 @@ public class CardFunction : MonoBehaviour
 
         if (card.attackVal != 0)
         {
-            enemy.GetComponent<EnemyFunction>().currentHealth = enemy.GetComponent<EnemyFunction>().currentHealth - card.attackVal;
-            enemy.GetComponent<EnemyFunction>().enemyHealth.text = "Enemy Health: " + enemy.GetComponent<EnemyFunction>().currentHealth;
+            enemy.GetComponent<EnemyFunction>().TakeDamage(card.attackVal);
+        }
+
+        if(card.protectVal != 0)
+        {
+            player.GetComponent<PlayerHealthScript>().shield = player.GetComponent<PlayerHealthScript>().shield + card.protectVal;
+            player.GetComponent<PlayerHealthScript>().shieldText.text = "Def: " + player.GetComponent<PlayerHealthScript>().shield;
+        }
+
+        if(card.debuffVal != 0)
+        {
+            enemy.GetComponent<EnemyFunction>().debuffVal = enemy.GetComponent<EnemyFunction>().debuffVal + card.debuffVal;
+            enemy.GetComponent<EnemyFunction>().enemyDebuff.text = "Debuff: " + enemy.GetComponent<EnemyFunction>().debuffVal;
         }
 
     }
