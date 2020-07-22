@@ -66,9 +66,7 @@ public class EnemyFunction : MonoBehaviour
     {
         if (debuffVal != 0)
         {
-            Debug.Log("Damage before: " + damage);
             damage += debuffVal;
-            Debug.Log("Damage after: " + damage);
         }
         int shieldtake = damage;
         damage -= shield;
@@ -133,8 +131,6 @@ public class EnemyFunction : MonoBehaviour
 
             player.GetComponent<PlayerHealthScript>().TakeDamage(attack);
 
-            Debug.Log("Attacked");
-
             if (isAttack2 && hasDebuffed)
             {
                 hasAttacked = true;
@@ -146,13 +142,13 @@ public class EnemyFunction : MonoBehaviour
             shield += enemy.enemyShield;
             enemyShield.text = "Def: " + shield;
 
-            Debug.Log("Shielded");
+            Debug.Log("Shield: +" + shield);
         }
         else if (attackChoice == 2)
         {
             player.GetComponent<PlayerHealthScript>().debuffVal = player.GetComponent<PlayerHealthScript>().debuffVal += enemy.enemyDebuff;
 
-            Debug.Log("Debuffed");
+            Debug.Log("Debuffed: " + debuffVal);
 
             hasDebuffed = true;
 

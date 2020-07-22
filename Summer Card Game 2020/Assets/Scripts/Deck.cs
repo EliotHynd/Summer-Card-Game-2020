@@ -29,13 +29,6 @@ public class Deck : MonoBehaviour
         decknum = cards.Count;
 
         Shuffle(cards);
-        
-        /*
-        foreach (GameObject card in cards)
-        {
-            print(card);
-        }
-        */
 
     }
 

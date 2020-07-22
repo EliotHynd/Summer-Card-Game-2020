@@ -817,7 +817,7 @@ PrefabInstance:
     - target: {fileID: 8577866864816861237, guid: 5ccb5209684af5c4d905d5f500d8a3ad,
         type: 3}
       propertyPath: levelToLoad
-      value: SampleScene
+      value: Map1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ccb5209684af5c4d905d5f500d8a3ad, type: 3}

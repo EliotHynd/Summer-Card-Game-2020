@@ -35,9 +35,7 @@ public class PlayerHealthScript : MonoBehaviour
     {
         if (debuffVal != 0)
         {
-            Debug.Log("Damage before: " + damage);
             damage += debuffVal;
-            Debug.Log("Damage after: " + damage);
         }
         int shieldtake = damage;
         damage -= shield;

@@ -37,7 +37,6 @@ public class DrawCards : MonoBehaviour
     public void Draw()
     {
         int drawamount = 5 - hand.GetComponent<Hand>().handcards.Count;
-        Debug.Log("Cards Can Draw: " + drawamount);
         for (var i = 0; i < drawamount; i++)
         {
 
