@@ -18,6 +18,20 @@ public class PlayerHealthScript : MonoBehaviour
 
     public GameObject sceneManager;
 
+    static bool created = false;
+    void Awake()
+    {
+        if (!created)
+        {
+            DontDestroyOnLoad(gameObject);
+            created = true;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
         currentHealth = health;
@@ -50,6 +64,20 @@ public class PlayerHealthScript : MonoBehaviour
         {
             PlayerDeath();
         }
+    }
+
+    public void Heal(int healthAmount)
+    {
+        if (healthAmount > health - currentHealth)
+        {
+            healthAmount = health - currentHealth;
+        }
+        if (currentHealth < health)
+        {
+            currentHealth += healthAmount;
+            healthText.text = "Player Health: " + currentHealth;
+        }
+
     }
 
     void PlayerDeath()

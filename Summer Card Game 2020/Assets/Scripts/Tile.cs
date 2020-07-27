@@ -12,7 +12,17 @@ public class Tile : MonoBehaviour
     public GameObject chanceTile;
     public GameObject startTile;
 
+    public GameObject playerLocal;
+
     public int tileChoice;
+
+    private void Start()
+    {
+        if( tileChoice == 0)
+        {
+            playerLocal.SetActive(true);
+        }
+    }
 
     private void Update()
     {
