@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: SaltThrow
   m_EditorClassIdentifier: 
   cardName: Salt Throw
-  description: Deals 5 damage.
-  artwork: {fileID: 0}
+  description: Deal 5 damage
+  artwork: {fileID: 21300000, guid: bb11c99b8cc100644a24ddf225d7027d, type: 3}
   manaCost: 2
   attackVal: 5
+  protectVal: 0
+  debuffVal: 0
+  healthVal: 0
